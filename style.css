@@ -1,0 +1,18 @@
+/*
+Theme Name: Isma
+Theme URI: //
+Author: Maxime BERNARD-JACQUET
+Author URI: //
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+.menu {
+    position: fixed;
+    top: 0px;
+}
+
+.admin-bar .menu {
+    top: 32px;
+    /* on prend en compte le décalage */
+}
