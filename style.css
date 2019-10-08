@@ -9,19 +9,10 @@ Version: 1.0
 */
 
 /* PARTIE HEADER */
-.menu {
-  position: fixed;
-  top: 0px;
-}
 
-.admin-bar .menu {
-  top: 32px;
-  /* on prend en compte le décalage */
-}
 header {
   background: white;
-  position: fixed;
-  top: 0px;
+  font-size: 13px;
 }
 
 .btn-hamb {
@@ -31,6 +22,7 @@ header {
 
 a {
   color: black;
+  font-weight: bold;
 }
 a:hover {
   color: black;
@@ -45,9 +37,30 @@ a:hover {
   width: 20%;
 }
 
-/* PARTIE FOOTER */
-
-h5 {
-  font-size: 50px;
-  color: red;
+nav {
+  display: flex !important;
+  justify-content: space-around !important;
+  width: 90% !important;
+  margin: auto;
 }
+.top-home {
+  background-image: url("http://localhost/premierWordpress/wp-content/themes/Composition-Wordpress/svg/home-minimal.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  width: 15px;
+  height: 15px;
+  border-bottom: solid 3px black;
+  padding-bottom: 50px;
+}
+.btn-wish {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.margin {
+  margin-right: 10%;
+}
+
+/* Fin partie header */

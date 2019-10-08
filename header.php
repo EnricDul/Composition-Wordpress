@@ -15,19 +15,16 @@
   <body <?php body_class(); ?>
     >
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <a href="<?php echo home_url( '/' ); ?>">
-            <img
+      <nav class="navbar navbar-expand-lg navbar-light col-12 ">
+        <a class = "margin" href="<?php echo home_url( '/' ); ?>">
+            <img 
               src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg"
               alt="Logo"
             />
           </a>
 
-          <a class="nav-item" href="#"
-            ><img class="invert"
-              src="<?php echo get_template_directory_uri(); ?>/svg/home-minimal.svg"
-              alt="Logo"
-              />
+          <a class="top-home" href="#"
+            > <!-- Logo en background en css  -->
             <span class="sr-only">(current)</span></a
           >
        
@@ -53,12 +50,12 @@
           >
           
           <!-- Menu hamburger -->
-          <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
-            <span id="wishlist">Wishlist<img
+          <button type="button" class="btn btn-hamb btn-wish" data-toggle="dropdown" id="dropdownMenuButton">
+            
+            <span id="wishlist">Wishlist</span><img class="burger"
               src="<?php echo get_template_directory_uri(); ?>/svg/bullet-list.svg"
               alt="burger"
-            /></span>
+            />
           </button>
                     
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
