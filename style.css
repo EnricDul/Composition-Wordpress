@@ -7,6 +7,8 @@ Description: Mon premier thème !
 Requires at least: WordPress 5.0
 Version: 1.0
 */
+
+/* PARTIE HEADER */
 .menu {
   position: fixed;
   top: 0px;
@@ -25,4 +27,27 @@ header {
 .btn-hamb {
   background-color: black;
   color: white;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+.black-underline:hover {
+  border-bottom: 3px solid black;
+  padding-bottom: 15px;
+}
+
+.invert {
+  width: 20%;
+}
+
+/* PARTIE FOOTER */
+
+h5 {
+  font-size: 50px;
+  color: red;
 }

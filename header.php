@@ -22,30 +22,42 @@
               alt="Logo"
             />
           </a>
-          <a class="nav-item nav-link active" href="#"
-            >MAGASIN <span class="sr-only">(current)</span></a
+
+          <a class="nav-item" href="#"
+            ><img class="invert"
+              src="<?php echo get_template_directory_uri(); ?>/svg/home-minimal.svg"
+              alt="Logo"
+              />
+            <span class="sr-only">(current)</span></a
           >
+       
           <a class="nav-item nav-link active" href="#"
-            >ARCHITECTE D'INTERIEUR
+            ><span class="black-underline">MAGASIN</span> 
             <span class="sr-only">(current)</span></a
           >
           <a class="nav-item nav-link active" href="#"
-            >A PROPOS <span class="sr-only">(current)</span></a
+            ><span class="black-underline">ARCHITECTE D'INTERIEUR</span>
+            <span class="sr-only">(current)</span></a
           >
           <a class="nav-item nav-link active" href="#"
-            >BLOG <span class="sr-only">(current)</span></a
+            ><span class="black-underline">A PROPOS</span>
+            <span class="sr-only">(current)</span></a
           >
           <a class="nav-item nav-link active" href="#"
-            >CONTACT <span class="sr-only">(current)</span></a
+            ><span class="black-underline">BLOG</span>
+            <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link active" href="#"
+            ><span class="black-underline">CONTACT</span>
+            <span class="sr-only">(current)</span></a
           >
           
-          <!--DEBUT DU DROPDOWN-->
-                              <!-- Menu hamburger -->
+          <!-- Menu hamburger -->
           <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
             <span class="glyphicon glyphicon-menu-hamburger"></span>
             <span id="wishlist">Wishlist<img
               src="<?php echo get_template_directory_uri(); ?>/svg/bullet-list.svg"
-              alt="Logo"
+              alt="burger"
             /></span>
           </button>
                     
