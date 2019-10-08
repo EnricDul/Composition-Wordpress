@@ -15,7 +15,7 @@
   <body <?php body_class(); ?>
     >
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a href="<?php echo home_url( '/' ); ?>">
             <img
               src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg"
@@ -41,33 +41,16 @@
           
           <!--DEBUT DU DROPDOWN-->
                               <!-- Menu hamburger -->
-          <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
-            <span id="wishlist">Wishlist<img
-              src="<?php echo get_template_directory_uri(); ?>/svg/bullet-list.svg"
-              alt="Logo"
-            /></span>
-          </button>
-                    
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            
-          <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-           
+                              <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        <span class="foo">Foodog</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Nutrition</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <a class="dropdown-item" href="#">Wellness</a>
+                        <a class="dropdown-item" href="#">Community</a>
+                    </div>
                 </div>
 <!-- FIN NAV BAR STANDAR -->
 <!-- ON VEUT LA METTRE ICI -->

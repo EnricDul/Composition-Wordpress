@@ -8,11 +8,21 @@ Requires at least: WordPress 5.0
 Version: 1.0
 */
 .menu {
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
 }
 
 .admin-bar .menu {
-    top: 32px;
-    /* on prend en compte le décalage */
+  top: 32px;
+  /* on prend en compte le décalage */
+}
+header {
+  background: white;
+  position: fixed;
+  top: 0px;
+}
+
+.btn-hamb {
+  background-color: black;
+  color: white;
 }
