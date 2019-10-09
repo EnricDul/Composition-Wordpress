@@ -1,0 +1,138 @@
+/*
+Theme Name: Isma
+Theme URI: //
+Author: Maxime BERNARD-JACQUET
+Author URI: //
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+/* PARTIE HEADER */
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/font/proxima_ssv/Proxima Nova Alt Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  background: white;
+  font-size: 13px;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.btn-hamb {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+a:hover {
+  color: black;
+}
+
+.black-underline:hover {
+  border-bottom: 3px solid black;
+  padding-bottom: 15px;
+}
+
+.invert {
+  width: 20%;
+}
+
+#nav-items-desktop {
+  display: flex !important;
+  justify-content: space-around !important;
+  width: 90% !important;
+  margin: auto;
+}
+.top-home {
+  background-image: url("http://localhost/premierWordpress/wp-content/themes/Composition-Wordpress/assets/svg/home-minimal.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  width: 15px;
+  height: 15px;
+  border-bottom: solid 3px black;
+  padding-bottom: 50px;
+}
+.btn-wish {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.margin {
+  margin-right: 10%;
+}
+
+.dropdown-menu {
+  right: 0;
+  background-color: black;
+  color: white;
+}
+
+.menu-tablette {
+  display: none;
+}
+
+.nav-items-tablet {
+  display: none;
+}
+/* RESPONSIVE TABLETTE */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  header {
+    z-index: 0;
+  }
+  .nav-items-tablet {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    align-items: flex-end;
+  }
+  .burger-X {
+    padding: 0%;
+    display: flex;
+    justify-content: flex-end;
+
+    width: 101.56px;
+  }
+
+  li {
+    list-style: none;
+  }
+  .item-tabl {
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-btn {
+    background-color: black;
+    color: white;
+  }
+
+  .menu-btn:focus {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0px white;
+  }
+
+  .nav-items-desktop {
+    display: none;
+  }
+
+  .tamere {
+    background-image: rgba(255, 255, 255, 1);
+  }
+}
+
+/* Fin partie header */

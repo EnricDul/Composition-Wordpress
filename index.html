@@ -15,46 +15,135 @@
   <body <?php body_class(); ?>
     >
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="<?php echo home_url( '/' ); ?>">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/svg/logo-full.svg"
-              alt="Logo"
-            />
-          </a>
-          <a class="nav-item nav-link active" href="#"
-            >MAGASIN <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link active" href="#"
-            >ARCHITECTE D'INTERIEUR
-            <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link active" href="#"
-            >A PROPOS <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link active" href="#"
-            >BLOG <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link active" href="#"
-            >CONTACT <span class="sr-only">(current)</span></a
-          >
-          
-          <!--DEBUT DU DROPDOWN-->
-                              <!-- Menu hamburger -->
-                              <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>
-                        <span class="foo">Foodog</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Nutrition</a>
-                        <a class="dropdown-item" href="#">Lifestyle</a>
-                        <a class="dropdown-item" href="#">Wellness</a>
-                        <a class="dropdown-item" href="#">Community</a>
-                    </div>
-                </div>
-<!-- FIN NAV BAR STANDAR -->
-<!-- ON VEUT LA METTRE ICI -->
+      <nav class="navbar navbar-expand-lg navbar-light col-12 ">
+        <a class="margin" href="<?php echo home_url( '/' ); ?>">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-full.svg"
+            alt="Logo"
+          />
+        </a>
 
+        <a class="top-home" href="#">
+          <!-- Logo en background en css  -->
+          <span class="sr-only">(current)</span></a
+        >
+
+        <a class="nav-item nav-link active" href="#"
+          ><span class="black-underline">MAGASIN</span>
+          <span class="sr-only">(current)</span></a
+        >
+        <a class="nav-item nav-link active" href="#"
+          ><span class="black-underline">ARCHITECTE D'INTERIEUR</span>
+          <span class="sr-only">(current)</span></a
+        >
+        <a class="nav-item nav-link active" href="#"
+          ><span class="black-underline">A PROPOS</span>
+          <span class="sr-only">(current)</span></a
+        >
+        <a class="nav-item nav-link active" href="#"
+          ><span class="black-underline">BLOG</span>
+          <span class="sr-only">(current)</span></a
+        >
+        <a class="nav-item nav-link active" href="#"
+          ><span class="black-underline">CONTACT</span>
+          <span class="sr-only">(current)</span></a
+        >
+
+        <!-- Menu hamburger -->
+        <button
+          type="button"
+          class="btn btn-hamb btn-wish"
+          data-toggle="dropdown"
+          id="dropdownMenuButton"
+        >
+          <span id="wishlist">Wishlist</span
+          ><img
+            class="burger"
+            src="<?php echo get_template_directory_uri(); ?>/assets/svg/bullet-list.svg"
+            alt="burger"
+          />
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+
+        <!--Menu hamburger pour responsive tablette et mobile -->
+
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg">
+              <ul class="menu-site-hamburger">
+                <li><a href="#"> Nutrition</a></li>
+                <li><a href="#"> Wellness</a></li>
+                <li><a href="#"> Lifestyle</a></li>
+                <li><a href="#"> Community</a></li>
+                <li class="iconehamburger">
+                  <a href="https://www.facebook.com/"
+                    ><i class="fa fa-facebook fa-3x"></i></a
+                  >&nbsp&nbsp
+                  <a href="https://www.twitter.com/"
+                    ><i class="fa fa-twitter fa-3x"></i></a
+                  >&nbsp&nbsp
+                  <a href="https://www.instagram.com/"
+                    ><i class="fa fa-instagram fa-3x"></i></a
+                  >&nbsp&nbsp
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              MEnu
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+        <!-- FIN NAV BAR STANDAR -->
+        <!-- ON VEUT LA METTRE ICI -->
       </nav>
     </header>
 
