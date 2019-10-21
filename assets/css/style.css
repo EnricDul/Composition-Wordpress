@@ -89,7 +89,7 @@ a:hover {
 }
 /* RESPONSIVE TABLETTE */
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 991px) {
   header {
     z-index: 0;
   }
@@ -138,3 +138,134 @@ a:hover {
 }
 
 /* Fin partie header */
+
+/* Partie Footer */
+
+#top-foot-horaire {
+  background-color: black;
+  color: white;
+}
+
+#foot-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#tissus-contenair {
+  padding-top: 40px;
+  padding-right: 30%;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#rounded-img-contenair {
+  width: 150px;
+  height: 150px;
+}
+
+#rounded-img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#roundedcanape {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#top-foot-horaire {
+  padding: 50px;
+}
+
+/* Footer bottom */
+
+#foot-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.icon-social {
+  padding: 10px;
+}
+
+.logo-social {
+  width: 15px;
+  height: auto;
+}
+.logo-social-fb {
+  width: 10px;
+  height: auto;
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+}
+
+/* Fin de la partie footer
+
+/* Front page */
+
+body {
+  width: 100%;
+  font-family: "Proxima Nova";
+}
+
+#container-top {
+  display: flex;
+  width: 100%;
+}
+
+#front-top-left {
+  width: 50%;
+}
+#front-top-right {
+  width: 50%;
+}
+
+.top-image {
+  width: 100%;
+  z-index: -1;
+}
+
+.top-article-droit {
+  background-color: black;
+  color: white;
+  width: 85%;
+  margin-top: -10%;
+  padding: 10%;
+  margin-left: 7%;
+}
+
+.top-article-gauche {
+  background-color: white;
+  color: black;
+  width: 85%;
+  margin-top: -10%;
+  margin-left: 7%;
+  padding: 10%;
+  margin-top: -10%;
+}
+
+h3 {
+  font-size: 16px !important;
+}
